@@ -39,7 +39,7 @@ class Game {
     };
 
     render() {
-        this.spawnWord();
+        // this.spawnWord();
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         requestAnimationFrame(this.render);
         this.input.focus();
