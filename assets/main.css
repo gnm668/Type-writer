@@ -3,7 +3,6 @@
 }
 
 body {
-    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -11,6 +10,7 @@ body {
 }
 
 .game-container {
+    position: relative;
     display: flex;
     justify-self: center;
     align-self: center;
@@ -28,6 +28,7 @@ body {
 #input {
     position: absolute;
     bottom: 50px;
+    left: 425px;
     font-size: 20px;
     padding: 3px;
     background: grey;
