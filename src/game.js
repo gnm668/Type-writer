@@ -10,7 +10,7 @@ class Game {
         this.dictionary = new Dictionary();
         this.words = [];
         this.wordCount = 1;
-        this.randomizer = 145;
+        this.randomizer = 200;
 
         this.lives = 20;
 
