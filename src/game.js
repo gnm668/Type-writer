@@ -34,19 +34,20 @@ class Game {
     };
 
     spawnWord() {
-        let randomLoc = (Math.random() * 790);
+        let randomLoc = (Math.random() * 690);
         let word = new Word(this, this.ctx, this.canvas, 'randomWord', randomLoc, 0);
-        this.words.push();
+        this.words.push(word);
     };
 
     render() {
+        this.spawnWord();
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         // this.word.render();
         requestAnimationFrame(this.render);
         this.input.focus();
 
         for (let i = 0; i < this.words.length; ++i) {
-
+            this.words[i].render();
         };
     };
 
