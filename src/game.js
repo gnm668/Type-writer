@@ -22,6 +22,7 @@ class Game {
 
         this.interval = this.interval.bind(this);
 
+        this.handleSkill = this.handleSkill.bind(this);
         this.addSkill = this.addSkill.bind(this);
         this.maxSkill = this.maxSkill.bind(this);
         
@@ -131,6 +132,22 @@ class Game {
         };
     };
 
+    handleSkill() {
+        for (let skill in this.skills) {
+            let skillNames = document.querySelector('.skill-names').children;
+
+            if (value === this.skills[skill]) {
+                for (let skillName in skillNames) {
+                    if (value === skillNames[skillName].innerText) {
+                        skillNames[skillName].remove();
+                        this.input.value = '';
+                        return;
+                    };
+                };
+            };
+        };
+    };
+
     handleWord(e) {
         if (e.keyCode === 32 || e.keyCode === 13) {
             let value = this.input.value.trim();
@@ -148,19 +165,7 @@ class Game {
                 };
             };
 
-            for (let skill in this.skills) {
-                let skillNames = document.querySelector('.skill-names').children;
-
-                if (value === this.skills[skill]) {
-                    for (let skillName in skillNames) {
-                        if (value === skillNames[skillName].innerText) {
-                            skillNames[skillName].remove();
-                            this.input.value = '';
-                            return; 
-                        };
-                    };
-                };
-            };
+            this.handleSkill();
 
             this.input.value = "";
             console.log(this.skills);
