@@ -13,7 +13,12 @@ body {
     /* background-color: rgb(131, 131, 131); */
     background-color: rgb(49, 49, 49);
     height: 650px;
-    width: 800px;
+    width: 850px;
+}
+
+.game-info {
+    width: 50px;
+    background: red;
 }
 
 #input {
