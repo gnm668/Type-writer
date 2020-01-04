@@ -134,6 +134,7 @@ class Game {
     handleWord(e) {
         if (e.keyCode === 32 || e.keyCode === 13) {
             let value = this.input.value.trim();
+
             for (let word in this.words) {
                 if (value === this.words[word].word) {
                     this.score += this.words[word].score;
@@ -146,6 +147,21 @@ class Game {
                     break;
                 };
             };
+
+            for (let skill in this.skills) {
+                let skillNames = document.querySelector('.skill-names').children;
+
+                if (value === this.skills[skill]) {
+                    for (let skillName in skillNames) {
+                        if (value === skillNames[skillName].innerText) {
+                            skillNames[skillName].remove();
+                            this.input.value = '';
+                            return; 
+                        };
+                    };
+                };
+            };
+
             this.input.value = "";
             console.log(this.skills);
         };
