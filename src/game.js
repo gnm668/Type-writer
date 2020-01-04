@@ -59,7 +59,7 @@ class Game {
         scoreInfo.innerText = this.score;
         livesInfo.innerText = this.lives;
 
-        this.checkGameOver();
+        // this.checkGameOver();
     };
 
     interval() {
@@ -106,9 +106,10 @@ class Game {
             this.skills.push('bomb');
 
             let skill = document.createElement('div');
+            skill.classList.add('bomb');
             skill.innerText = 'bomb';
 
-            let skills = document.querySelector('.skills');
+            let skills = document.querySelector('.skill-names');
             skills.appendChild(skill);
         };
     };

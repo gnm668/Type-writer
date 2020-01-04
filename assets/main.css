@@ -64,6 +64,23 @@ body {
     height: 325px;
     width: 150px;
     background: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills > :first-child {
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+.skill-names {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bomb {
+    color: rgb(77, 0, 0);
 }
 
 .lives {
