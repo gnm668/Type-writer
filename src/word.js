@@ -35,6 +35,7 @@ class Word {
     checkEdge() {
         if (this.y === 615) {
             this.game.lives -= 1;
+            console.log(this.game.lives);
         };
     };
 

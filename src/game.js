@@ -7,7 +7,6 @@ class Game {
         this.render = this.render.bind(this);
         this.startGame = this.startGame.bind(this);
 
-        // this.word = new Word(this, this.ctx, this.canvas, "light", 690, 20);
 
         this.words = [];
         this.wordCount = 0;
@@ -25,7 +24,7 @@ class Game {
     interval() {
         window.setInterval(() => {
             this.timer += 1;
-            console.log(`${this.timer}`);
+            // console.log(`${this.timer}`);
         }, 1000);
     };
 
@@ -40,9 +39,8 @@ class Game {
     };
 
     render() {
-        this.spawnWord();
+        // this.spawnWord();
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        // this.word.render();
         requestAnimationFrame(this.render);
         this.input.focus();
 
