@@ -24,6 +24,17 @@ class Game {
         this.render = this.render.bind(this);
 
         this.interval();
+        this.gameInfo();
+    };
+
+    gameInfo() {
+        const score = document.querySelector('.score')[0];
+        const skills = document.querySelector('.skills')[0];
+        const lives = document.querySelector('.lives')[0];
+
+        const scoreInfo = document.createElement('div');
+        const skillsInfo = document.createElement('div');
+        const livesInfo = document.createElement('div');
     };
 
     interval() {

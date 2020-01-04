@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     position: relative;
     display: flex;
@@ -44,19 +48,22 @@ body {
 }
 
 .score {
-    height: 100px;
+    text-align: center;
+    height: 150px;
     width: 150px;
     background: grey;
 }
 
 .skills {
-    height: 400px;
+    text-align: center;
+    height: 325px;
     width: 150px;
     background: grey;
 }
 
 .lives {
-    height: 100px;
+    text-align: center;
+    height: 150px;
     width: 150px;
     background: grey;
 }
