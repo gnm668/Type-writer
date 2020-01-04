@@ -1,4 +1,5 @@
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -13,4 +14,20 @@ body {
     background-color: rgb(49, 49, 49);
     height: 650px;
     width: 550px;
+}
+
+#input {
+    position: absolute;
+    bottom: 50px;
+    font-size: 20px;
+    padding: 3px;
+    background: grey;
+    border: none;
+    opacity: 90%;
+    text-align: center;
+    color: rgb(43, 43, 43);
+}
+
+#input:focus {
+    outline: none;
 }
