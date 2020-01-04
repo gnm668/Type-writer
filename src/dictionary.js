@@ -34,6 +34,13 @@ class Dictionary {
     'import', 'export', 'default', 'extends', 'component', 'websocket', 'socketio',
     'server', 'localhost', 'framework', 'library', 'node', 'express', 'mongodb',
     'database', 'onclick', 'onmouseover', 'addeventlistener', 'parse', 'persist', 
-    'pixel', 'polymorphism', 'process', '']
+    'pixel', 'polymorphism', 'process', 'psuedocode', 'whiteboarding', 'twosum', 
+    'recursion', 'sort', 'quicksort', 'mergesort', 'curry', 'bind', 'apply', 
+    'call', 'bubblesort', 'linux', 'shell', 'bash', 'snippet', 'github', 'git', 
+    'syntax', 'class', 'superclass', 'token', 'cookie', 'cookies', 'session', 
+    'web', 'for', 'while', 'conditional', 'each', 'foreach', 'with', 'index', 
+    'key', 'value', 'stack', 'queue', 'tree', 'binary', 'tertiary', 'poly', 
+    'algorithm', 'abstraction', 'file', 'directory', 'insertionsort', 'bug', 
+    'feature', '']
     };
 };
