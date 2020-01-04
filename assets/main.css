@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-self: center;
     align-self: center;
-    /* background-color: rgb(160, 160, 160); */
+    background-color: rgb(255, 255, 255);
     background-color: rgb(49, 49, 49);
     height: 650px;
     width: 800px;

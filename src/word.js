@@ -13,8 +13,9 @@ class Word {
     };
     
     draw() {
-        this.ctx.fillStyle = "rgb(160, 160, 160)";
-        this.ctx.fillRect(this.x, this.y, 100, 50);
+        this.ctx.font = '20px Arial';
+        this.ctx.fillStyle = 'rgb(255, 255, 255)';
+        this.ctx.fillText(`${this.word}`,this.x, this.y);
     };
 
     render() {

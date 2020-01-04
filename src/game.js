@@ -7,11 +7,15 @@ class Game {
         this.render = this.render.bind(this);
         this.startGame = this.startGame.bind(this);
 
-        this.word = new Word(this, this.ctx, this.canvas, "light", 20, 20);
+        this.word = new Word(this, this.ctx, this.canvas, "light", 690, 20);
 
         this.words = [];
 
         this.lives = 20;
+    };
+
+    spawnWords() {
+        
     };
 
     render() {

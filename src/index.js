@@ -6,6 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typeWriter = new Game(ctx, canvas, input);
     typeWriter.startGame();
-
-
 });
