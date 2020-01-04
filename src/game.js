@@ -7,7 +7,7 @@ class Game {
         this.render = this.render.bind(this);
         this.startGame = this.startGame.bind(this);
 
-
+        this.dictionary = new Dictionary();
         this.words = [];
         this.wordCount = 0;
 
@@ -34,12 +34,12 @@ class Game {
 
     spawnWord() {
         let randomLoc = (Math.random() * 690);
-        let word = new Word(this, this.ctx, this.canvas, 'randomWord', randomLoc, 0);
+        let word = new Word(this, this.ctx, this.canvas, this.dictionary.randomWord(), randomLoc, 0);
         this.words.push(word);
     };
 
     render() {
-        // this.spawnWord();
+        this.spawnWord();
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         requestAnimationFrame(this.render);
         this.input.focus();

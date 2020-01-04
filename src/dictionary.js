@@ -9,7 +9,7 @@ class Dictionary {
     'element', 'document', 'ram', 'amoritization', 'amoritize', 'blockchain',
     'bitcoin', 'dogecoin', 'apple', 'facebook', 'netflix', 'google', 'uber',
     'juul', 'array', 'dictionary', 'string', 'integer', 'boolean', 'switch',
-    'case', 'if', 'else', 'or', 'and' 'elsif', 'truthy', 'falsey', 'true',
+    'case', 'if', 'else', 'or', 'and', 'elsif', 'truthy', 'falsey', 'true',
     'false', 'null', 'nil', 'undefined', 'xor', 'developer', 'development', 
     'production', 'thunk', 'action', 'reducer', 'util', 'utility', 'link', 
     'style', 'stylesheets', 'input', 'output', 'function', 'method', 'list', 
@@ -46,7 +46,11 @@ class Dictionary {
     'postman', 'salt', 'authentication', 'encryption', 'params', 'match', 'history', 
     'props', 'ownprops', 'async', 'inheritance', 'prototype', 'then', 'catch', 
     'resolve', 'local', 'storage', 'lifecycle', 'mutable', 'immutable', 'mount', 
-    'connect', 'container', 'selector', 'random', 'access'];
+    'connect', 'container', 'selector', 'random', 'access', 'silicon', 'valley', 
+    'bay', 'mountain', 'view', 'engine', 'dropbox', 'slack', 'pinterest', 'lyft',
+    'ui', 'ux', 'experience', 'readable', 'relational', 'nonrelational', 
+    'query', 'queried', 'window', 'timeout', 'pos', 'position', 'result', 'res',
+    'monkey', 'mouse', 'keyboard', 'screen', 'viewport', 'relative'];
     };
 
     randomWord() {
