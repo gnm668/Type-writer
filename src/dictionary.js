@@ -41,6 +41,16 @@ class Dictionary {
     'web', 'for', 'while', 'conditional', 'each', 'foreach', 'with', 'index', 
     'key', 'value', 'stack', 'queue', 'tree', 'binary', 'tertiary', 'poly', 
     'algorithm', 'abstraction', 'file', 'directory', 'insertionsort', 'bug', 
-    'feature', '']
+    'feature', 'enumerable', 'monkeypatch', 'scope', 'byebug', 'semantic', 
+    'structure', 'depth', 'breadth', 'require', 'rspec', 'routes', 'routing', 
+    'postman', 'salt', 'authentication', 'encryption', 'params', 'match', 'history', 
+    'props', 'ownprops', 'async', 'inheritance', 'prototype', 'then', 'catch', 
+    'resolve', 'local', 'storage', 'lifecycle', 'mutable', 'immutable', 'mount', 
+    'connect', 'container', 'selector', 'random', 'access'];
+    };
+
+    randomWord() {
+        const randomIdx = Math.floor(Math.random() * this.words.length)
+        return this.words[randomIdx];
     };
 };
