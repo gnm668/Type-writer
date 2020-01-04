@@ -1,5 +1,5 @@
 class Word {
-    constructor(game, ctx, canvas, word, x, y, score) {
+    constructor(game, ctx, canvas, word, x, y, score, wordSpeed) {
         this.game = game;
         this.ctx = ctx;
         this.canvas = canvas;
@@ -9,7 +9,7 @@ class Word {
         this.x = x;
         this.y = y;
         this.dx = 0;
-        this.dy = 5;
+        this.dy = wordSpeed;
     
         this.widthCalc();
         this.checkEdge = this.checkEdge.bind(this);

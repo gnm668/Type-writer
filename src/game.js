@@ -10,7 +10,8 @@ class Game {
         this.dictionary = new Dictionary();
         this.words = [];
         this.wordScore = 100;
-        this.randomizer = 175;
+        this.wordSpeed = 0.25;
+        this.randomizer = 150;
 
         this.lives = 20;
         this.score = 0;
@@ -73,6 +74,10 @@ class Game {
             this.randomizer -= 5;
             // console.log(this.randomizer);
         };
+
+        if (this.score % 10000 === 0) {
+            this.wordSpeed += 0.25;
+        };
     };
 
     scoreIncrease() {
@@ -89,7 +94,7 @@ class Game {
 
     spawnWord() {
         let randomLoc = (Math.random() * 690);
-        let word = new Word(this, this.ctx, this.canvas, this.dictionary.randomWord(), randomLoc, 0, this.wordScore);
+        let word = new Word(this, this.ctx, this.canvas, this.dictionary.randomWord(), randomLoc, 0, this.wordScore, this.wordSpeed);
         this.words.push(word);
     };
 
