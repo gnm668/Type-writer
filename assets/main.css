@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: grey;
+    height: 650px;
+    width: 550px;
+}

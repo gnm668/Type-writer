@@ -1,5 +1,6 @@
 class Game {
-    constructor() {
-        
+    constructor(ctx, canvas) {
+        this.ctx = ctx;
+        this.canvas = canvas;
     };
 };
