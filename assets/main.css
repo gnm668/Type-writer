@@ -13,11 +13,11 @@ body {
     /* background-color: rgb(131, 131, 131); */
     background-color: rgb(49, 49, 49);
     height: 650px;
-    width: 850px;
+    width: 950px;
 }
 
 .game-info {
-    width: 50px;
+    width: 150px;
     background: red;
 }
 
@@ -33,6 +33,30 @@ body {
     color: rgb(43, 43, 43);
 }
 
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 #input:focus {
     outline: none;
+}
+
+.score {
+    height: 100px;
+    width: 150px;
+    background: grey;
+}
+
+.skills {
+    height: 400px;
+    width: 150px;
+    background: grey;
+}
+
+.lives {
+    height: 100px;
+    width: 150px;
+    background: grey;
 }
