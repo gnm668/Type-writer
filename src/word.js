@@ -1,5 +1,6 @@
 class Word {
-    constructor(ctx, canvas, word, x, y) {
+    constructor(game, ctx, canvas, word, x, y) {
+        this.game = game;
         this.ctx = ctx;
         this.canvas = canvas;
         this.word = word;
@@ -22,8 +23,8 @@ class Word {
     };
 
     update() {
-        this.move();
         this.checkEdge();
+        this.move();
     };
 
     move() {
@@ -32,7 +33,7 @@ class Word {
 
     checkEdge() {
         if (this.y === 615) {
-            debugger;
+            this.game.lives -= 1;
         };
     };
 
