@@ -120,7 +120,7 @@ class Game {
 
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         requestAnimationFrame(this.render);
-        
+
         this.input.focus();
         this.input.addEventListener('keydown', this.handleWord);
 
@@ -135,6 +135,8 @@ class Game {
     };
 
     gameOver() {
-
+        if (this.lives < 1) {
+            document.querySelector('.game-over').classList.add('effect');
+        };
     };
 };
