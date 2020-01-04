@@ -28,8 +28,9 @@ class Game {
             this.timer += 1;
             console.log(`${this.timer}`);
 
-            if (this.timer % 45) {
-                this.randomizer += 1;
+            if (this.randomizer > 5 && this.timer % 20 === 0) {
+                this.randomizer -= 5;
+                console.log(this.randomizer);
             };
 
         }, 1000);
