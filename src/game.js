@@ -132,11 +132,13 @@ class Game {
         };
     };
 
-    handleSkill() {
+    handleSkill(value) {
         for (let skill in this.skills) {
             let skillNames = document.querySelector('.skill-names').children;
 
             if (value === this.skills[skill]) {
+                this.skills.splice(skill, 1);
+
                 for (let skillName in skillNames) {
                     if (value === skillNames[skillName].innerText) {
                         skillNames[skillName].remove();
@@ -165,7 +167,7 @@ class Game {
                 };
             };
 
-            this.handleSkill();
+            this.handleSkill(value);
 
             this.input.value = "";
             console.log(this.skills);
