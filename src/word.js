@@ -31,12 +31,12 @@ class Word {
         const bomb = [46,23,4,17,64,36,77,89,33,90,52,27,35,15,93,15,58,31,99];
 
         if (bomb.includes(this.random)) {
-            this.skill = 'Bomb';
+            this.skill = 'bomb';
         };
     };
 
     assignColor() {
-        if (this.skill === 'Bomb') {
+        if (this.skill === 'bomb') {
             this.ctx.fillStyle = 'rgb(77, 0, 0)';
         } else {    
             this.ctx.fillStyle = '#000000';

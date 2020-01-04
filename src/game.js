@@ -102,8 +102,14 @@ class Game {
     };
 
     handleSkill(word) {
-        if (this.words[word].skill === 'Bomb') {
-            this.skills.push('Bomb');
+        if (this.words[word].skill === 'bomb') {
+            this.skills.push('bomb');
+
+            let skill = document.createElement('div');
+            skill.innerText = 'bomb';
+
+            let skills = document.querySelector('.skills');
+            skills.appendChild(skill);
         };
     };
 
@@ -144,10 +150,6 @@ class Game {
 
         for (let i = 0; i < this.words.length; ++i) {
             this.words[i].render();
-        };
-
-        for (let i = 0; i < this.skills.length; ++i) {
-            g
         };
     };
 
