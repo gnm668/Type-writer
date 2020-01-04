@@ -48,8 +48,12 @@ body {
 }
 
 .score {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    height: 150px;
+    height: 75px;
     width: 150px;
     background: grey;
 }
@@ -62,8 +66,12 @@ body {
 }
 
 .lives {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    height: 150px;
+    height: 75px;
     width: 150px;
     background: grey;
 }

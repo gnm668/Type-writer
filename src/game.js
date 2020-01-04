@@ -22,19 +22,36 @@ class Game {
         this.spawnWord = this.spawnWord.bind(this);
         this.spawnWords = this.spawnWords.bind(this);
         this.render = this.render.bind(this);
+        this.gameInfo = this.gameInfo.bind(this);
+        this.updateGameInfo = this.updateGameInfo.bind(this);
 
         this.interval();
         this.gameInfo();
     };
 
     gameInfo() {
-        const score = document.querySelector('.score')[0];
-        const skills = document.querySelector('.skills')[0];
-        const lives = document.querySelector('.lives')[0];
+        const score = document.querySelector('.score');
+        const skills = document.querySelector('.skills');
+        const lives = document.querySelector('.lives');
 
         const scoreInfo = document.createElement('div');
         const skillsInfo = document.createElement('div');
         const livesInfo = document.createElement('div');
+
+        scoreInfo.classList.add('score-info');
+        livesInfo.classList.add('lives-info');
+
+        scoreInfo.innerText = this.score;
+        // skill info
+        livesInfo.innerText = this.lives;
+
+        score.appendChild(scoreInfo);
+        lives.appendChild(livesInfo);
+    };
+
+    updateGameInfo() {
+        const scoreInfo = document.querySelector('.score-info');
+        scoreInfo.innerText = this.score;
     };
 
     interval() {
@@ -90,6 +107,7 @@ class Game {
     };
 
     render() {
+        this.updateGameInfo();
         this.spawnWords();
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         requestAnimationFrame(this.render);
