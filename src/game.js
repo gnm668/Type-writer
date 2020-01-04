@@ -6,6 +6,7 @@ class Game {
 
         this.render = this.render.bind(this);
         this.startGame = this.startGame.bind(this);
+        this.gameOver = false;
 
         this.dictionary = new Dictionary();
         this.words = [];
@@ -55,6 +56,8 @@ class Game {
 
         scoreInfo.innerText = this.score;
         livesInfo.innerText = this.lives;
+
+        this.checkGameOver();
     };
 
     interval() {
@@ -64,7 +67,6 @@ class Game {
 
             this.difficultyIncrease();
             this.scoreIncrease();
-            this.gameOver();
         }, 1000);
     };
 
@@ -114,12 +116,16 @@ class Game {
     };
 
     render() {
+        if (this.gameOver === true) {
+            return;
+        };
+
         this.updateGameInfo();
 
         this.spawnWords();
 
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        requestAnimationFrame(this.render);
+        this.req = requestAnimationFrame(this.render);
 
         this.input.focus();
         this.input.addEventListener('keydown', this.handleWord);
@@ -134,9 +140,17 @@ class Game {
         requestAnimationFrame(this.render);
     };
 
-    gameOver() {
+    checkGameOver() {
         if (this.lives < 1) {
-            document.querySelector('.game-over').classList.add('effect');
+            this.gameOver = true;
+
+            const gameOver = document.querySelector('.game-over')
+            gameOver.classList.add('effect');
+
+            const score = document.createElement('div');
+            score.innerText = this.score;
+            gameOver.appendChild(score);
+
         };
     };
 };
