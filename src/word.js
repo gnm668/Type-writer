@@ -9,7 +9,7 @@ class Word {
         this.x = x;
         this.y = y;
         this.dx = 0;
-        this.dy = wordSpeed;
+        this.dy = 10;
     
         this.widthCalc();
         this.checkEdge = this.checkEdge.bind(this);

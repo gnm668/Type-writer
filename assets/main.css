@@ -108,3 +108,21 @@ body {
     cursor: none;
 }
 
+.game-over {
+    opacity: 0%;
+    -webkit-transition: opacity 0.5s ease-out;
+}
+
+.game-over.effect {
+    position: absolute;
+    height: 650px;
+    width: 950px;
+    z-index: 1;
+    background: rgb(43, 43, 43);
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: opacity 0.5s ease-out;
+}
+

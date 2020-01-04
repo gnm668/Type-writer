@@ -13,7 +13,7 @@ class Game {
         this.wordSpeed = 0.25;
         this.randomizer = 150;
 
-        this.lives = 20;
+        this.lives = 1;
         this.score = 0;
 
         this.timer = 0;
@@ -25,7 +25,6 @@ class Game {
         this.render = this.render.bind(this);
         this.gameInfo = this.gameInfo.bind(this);
         this.updateGameInfo = this.updateGameInfo.bind(this);
-        this.gameOver = this.gameOver.bind(this);
 
         this.gameInfo();
     };
@@ -65,7 +64,7 @@ class Game {
 
             this.difficultyIncrease();
             this.scoreIncrease();
-
+            this.gameOver();
         }, 1000);
     };
 
@@ -116,9 +115,12 @@ class Game {
 
     render() {
         this.updateGameInfo();
+
         this.spawnWords();
+
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         requestAnimationFrame(this.render);
+        
         this.input.focus();
         this.input.addEventListener('keydown', this.handleWord);
 
@@ -133,8 +135,6 @@ class Game {
     };
 
     gameOver() {
-        if (this.lives < 1) {
 
-        };
     };
 };
