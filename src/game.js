@@ -16,6 +16,7 @@ class Game {
 
         this.lives = 10;
         this.score = 0;
+        this.skills = [];
 
         this.timer = 0;
 

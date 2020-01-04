@@ -10,11 +10,15 @@ class Word {
         this.y = y;
         this.dx = 0;
         this.dy = wordSpeed;
+
+        this.color = '#000000';
         
+        this.random = null;
         this.skill = null;
 
         this.checkEdge = this.checkEdge.bind(this);
         this.assignSkill = this.assignSkill.bind(this);
+        this.assignColor = this.assignColor.bind(this);
     
         this.widthCalc();
         this.assignSkill();
@@ -22,7 +26,21 @@ class Word {
     };
 
     assignSkill() {
-    
+        this.random = Math.floor(Math.random() * 200);
+
+        const bomb = [46,23,4,17,64,36,77,89,33,90,52,27,35,15,93,15,58,31,99];
+
+        if (bomb.includes(this.random)) {
+            this.skill = 'Bomb';
+        };
+    };
+
+    assignColor() {
+        if (this.skill === 'Bomb') {
+            this.ctx.fillStyle = 'rgb(77, 0, 0)';
+        } else {    
+            this.ctx.fillStyle = '#000000';
+        };
     };
 
     widthCalc() {
@@ -47,7 +65,7 @@ class Word {
             this.width = 110;
         };
 
-        this.ctx.fillStyle = '#000000';
+        this.assignColor();
         this.ctx.fillRect(this.x, this.y, this.width, 30);
         this.ctx.font = '16px Arial';
         this.ctx.fillStyle = 'rgb(255, 255, 255)';

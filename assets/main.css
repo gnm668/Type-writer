@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-self: center;
     align-self: center;
-    /* background-color: rgb(131, 131, 131); */
+    background-color: rgb(77, 0, 0);
     background-color: rgb(36, 36, 36);
     height: 650px;
     width: 950px;
@@ -103,6 +103,7 @@ body {
 .start-screen.effect {
     opacity: 0%;
     -webkit-transition: opacity 0.5s ease-out;
+    pointer-events: none;
 }
 
 .start-screen.effect:hover {
