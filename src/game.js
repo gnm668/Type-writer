@@ -21,13 +21,19 @@ class Game {
         this.timer = 0;
 
         this.interval = this.interval.bind(this);
-        this.handleWord = this.handleWord.bind(this);
+
         this.handleSkill = this.handleSkill.bind(this);
+        this.maxSkill = this.maxSkill.bind(this);
+        
+        this.handleWord = this.handleWord.bind(this);
         this.spawnWord = this.spawnWord.bind(this);
         this.spawnWords = this.spawnWords.bind(this);
-        this.render = this.render.bind(this);
+
+        
         this.gameInfo = this.gameInfo.bind(this);
         this.updateGameInfo = this.updateGameInfo.bind(this);
+        
+        this.render = this.render.bind(this);
 
         this.gameInfo();
     };
@@ -104,6 +110,7 @@ class Game {
     handleSkill(word) {
         if (this.words[word].skill === 'bomb') {
             this.skills.push('bomb');
+            this.maxSkill();
 
             let skill = document.createElement('div');
             skill.classList.add('bomb');
@@ -111,6 +118,12 @@ class Game {
 
             let skills = document.querySelector('.skill-names');
             skills.appendChild(skill);
+        };
+    };
+
+    maxSkill() {
+        if (this.skills.length === 10) {
+            this.skills.shift();
         };
     };
 
