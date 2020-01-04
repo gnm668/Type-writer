@@ -76,3 +76,35 @@ body {
     width: 150px;
     background: grey;
 }
+
+.start-screen {
+    position: absolute;
+    height: 650px;
+    width: 950px;
+    z-index: 3;
+    background: rgb(43, 43, 43);
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: opacity 0.5s ease-out;
+}
+
+.start-screen:hover {
+    cursor: pointer;
+}
+
+.start-screen > * {
+    font-size: 50px;
+    color: rgb(196, 196, 196);
+}
+
+.start-screen.effect {
+    opacity: 0%;
+    -webkit-transition: opacity 0.5s ease-out;
+}
+
+.start-screen.effect:hover {
+    cursor: none;
+}
+

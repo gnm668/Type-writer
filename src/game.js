@@ -26,7 +26,6 @@ class Game {
         this.gameInfo = this.gameInfo.bind(this);
         this.updateGameInfo = this.updateGameInfo.bind(this);
 
-        this.interval();
         this.gameInfo();
     };
 
@@ -75,7 +74,7 @@ class Game {
             // console.log(this.randomizer);
         };
 
-        if (this.score % 10000 === 0) {
+        if (this.timer % 60 === 0) {
             this.wordSpeed += 0.25;
         };
     };
@@ -100,7 +99,7 @@ class Game {
 
     handleWord(e) {
         if (e.keyCode === 32 || e.keyCode === 13) {
-            let value = this.input.value;
+            let value = this.input.value.trim();
             for (let word in this.words) {
                 if (value === this.words[word].word) {
                     this.score += this.words[word].score;
@@ -128,6 +127,7 @@ class Game {
     };
 
     startGame() {
+        this.interval();
         requestAnimationFrame(this.render);
     };
 };
