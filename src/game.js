@@ -22,7 +22,7 @@ class Game {
 
         this.interval = this.interval.bind(this);
 
-        this.handleSkill = this.handleSkill.bind(this);
+        this.addSkill = this.addSkill.bind(this);
         this.maxSkill = this.maxSkill.bind(this);
         
         this.handleWord = this.handleWord.bind(this);
@@ -107,7 +107,7 @@ class Game {
         this.words.push(word);
     };
 
-    handleSkill(word) {
+    addSkill(word) {
         if (this.words[word].skill === 'bomb') {
             this.skills.push('bomb');
             this.maxSkill();
@@ -138,7 +138,7 @@ class Game {
                 if (value === this.words[word].word) {
                     this.score += this.words[word].score;
 
-                    this.handleSkill(word);
+                    this.addSkill(word);
 
                     this.words.splice(word, 1);
                     // console.log(this.score);
