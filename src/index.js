@@ -1,5 +1,3 @@
-let typeWriter = null;
-
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById("game");
     const ctx = canvas.getContext("2d");
@@ -9,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameOver = document.querySelector('.game-over');
 
     startScreen.addEventListener('click', () => {
-        typeWriter = new Game(ctx, canvas, input);
+        const typeWriter = new Game(ctx, canvas, input);
         startScreen.classList.add('effect');
         typeWriter.startGame();
     });
 
-    gameOver.addEventListener('click', () => {
-        window.location.reload(false);
-    });
+    // gameOver.addEventListener('click', () => {
+    //     window.location.reload(false);
+    // });
 });

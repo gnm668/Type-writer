@@ -15,14 +15,14 @@ body {
     justify-self: center;
     align-self: center;
     /* background-color: rgb(131, 131, 131); */
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(36, 36, 36);
     height: 650px;
     width: 950px;
 }
 
 .game-info {
     width: 150px;
-    background: red;
+    background: rgb(36, 36, 36);
 }
 
 #input {
@@ -112,6 +112,8 @@ body {
 .game-over {
     opacity: 0%;
     -webkit-transition: opacity 0.5s ease-out;
+    position: absolute;
+    pointer-events: none;
 }
 
 .game-over.effect {
@@ -125,7 +127,6 @@ body {
     justify-content: center;
     align-items: center;
     -webkit-transition: opacity 0.5s ease-out;
-    cursor: pointer;
     flex-direction: column;
     font-size: 50px;
     justify-content: space-evenly;

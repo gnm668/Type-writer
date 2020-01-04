@@ -14,7 +14,7 @@ class Game {
         this.wordSpeed = 0.25;
         this.randomizer = 150;
 
-        this.lives = 1;
+        this.lives = 10;
         this.score = 0;
 
         this.timer = 0;
@@ -150,6 +150,10 @@ class Game {
             const score = document.createElement('div');
             score.innerText = this.score;
             gameOver.appendChild(score);
+
+            addEventListener('keydown', () => {
+                window.location.reload(false);
+            });
 
         };
     };
