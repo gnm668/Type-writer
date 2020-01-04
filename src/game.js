@@ -9,7 +9,8 @@ class Game {
 
         this.dictionary = new Dictionary();
         this.words = [];
-        this.wordCount = 0;
+        this.wordCount = 1;
+        this.randomizer = 145;
 
         this.lives = 20;
 
@@ -18,18 +19,28 @@ class Game {
         this.interval();
 
         this.spawnWord = this.spawnWord.bind(this);
+        this.spawnWords = this.spawnWords.bind(this);
         this.render = this.render.bind(this);
     };
 
     interval() {
         window.setInterval(() => {
             this.timer += 1;
-            // console.log(`${this.timer}`);
+            console.log(`${this.timer}`);
+
+            if (this.timer % 45) {
+                this.randomizer += 1;
+            };
+
         }, 1000);
     };
 
     spawnWords() {
-        
+        for (let i = 0; i < this.wordCount; ++i) {
+            if (Math.floor(Math.random() * this.randomizer + 10) === Math.floor(Math.random() * this.randomizer +10)) {
+                this.spawnWord();
+            };
+        };
     };
 
     spawnWord() {
@@ -39,7 +50,7 @@ class Game {
     };
 
     render() {
-        // this.spawnWord();
+        this.spawnWords();
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         requestAnimationFrame(this.render);
         this.input.focus();
