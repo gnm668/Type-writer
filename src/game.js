@@ -122,8 +122,10 @@ class Game {
     };
 
     maxSkill() {
-        if (this.skills.length === 10) {
+        if (this.skills.length > 10) {
             this.skills.shift();
+
+            document.querySelector('.skill-names').firstChild.remove();
         };
     };
 
