@@ -9,7 +9,7 @@ class Word {
         this.x = x;
         this.y = y;
         this.dx = 0;
-        this.dy = 0.25;
+        this.dy = 5;
     
         this.widthCalc();
         this.checkEdge = this.checkEdge.bind(this);
@@ -60,9 +60,15 @@ class Word {
     };
 
     checkEdge() {
-        if (this.y === 615) {
+        if (this.y === 630) {
             this.game.lives -= 1;
             console.log(this.game.lives);
+
+            for (let word in this.game.words) {
+                if (this.word === this.game.words[word].word) {
+                    this.game.words.splice(word, 1);
+                };
+            };
         };
     };
 
