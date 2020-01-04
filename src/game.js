@@ -7,6 +7,8 @@ class Game {
         this.startGame = this.startGame.bind(this);
 
         this.word = new Word(this.ctx, this.canvas, "light", 20, 20);
+
+        this.words = [];
     };
 
     render() {

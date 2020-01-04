@@ -2,13 +2,15 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    background-color: rgb(31, 31, 31);
 }
 
 .game-container {
     display: flex;
     justify-self: center;
     align-self: center;
-    background-color: grey;
+    /* background-color: rgb(160, 160, 160); */
+    background-color: rgb(49, 49, 49);
     height: 650px;
     width: 550px;
 }
