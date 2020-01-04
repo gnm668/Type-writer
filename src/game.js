@@ -145,6 +145,10 @@ class Game {
         for (let i = 0; i < this.words.length; ++i) {
             this.words[i].render();
         };
+
+        for (let i = 0; i < this.skills.length; ++i) {
+            g
+        };
     };
 
     startGame() {
