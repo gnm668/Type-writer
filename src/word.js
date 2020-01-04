@@ -26,13 +26,13 @@ class Word {
     };
 
     assignSkill() {
-        this.random = Math.floor(Math.random() * 5);
+        this.random = Math.floor(Math.random() * 200);
 
         const bomb = [46,23,4,17,64,36,77,89,33,90,52,27,35,15,93,15,58,31,99];
 
-        if (bomb.includes(this.random)) {
+        // if (bomb.includes(this.random)) {
             this.skill = 'bomb';
-        };
+        // };
     };
 
     assignColor() {

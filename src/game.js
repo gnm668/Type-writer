@@ -126,7 +126,7 @@ class Game {
             this.skills.shift();
         };
 
-        if (document.querySelector('.skill-names').children.length > 10) {
+        if (document.querySelector('.skill-names').children.length > 8) {
             document.querySelector('.skill-names').firstChild.remove();
         };
     };
