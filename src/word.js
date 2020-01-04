@@ -10,9 +10,19 @@ class Word {
         this.y = y;
         this.dx = 0;
         this.dy = wordSpeed;
+        
+        this.skill = null;
+
+        this.checkEdge = this.checkEdge.bind(this);
+        this.assignSkill = this.assignSkill.bind(this);
     
         this.widthCalc();
-        this.checkEdge = this.checkEdge.bind(this);
+        this.assignSkill();
+        
+    };
+
+    assignSkill() {
+    
     };
 
     widthCalc() {
