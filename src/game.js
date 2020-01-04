@@ -51,7 +51,10 @@ class Game {
 
     updateGameInfo() {
         const scoreInfo = document.querySelector('.score-info');
+        const livesInfo = document.querySelector('.lives-info');
+
         scoreInfo.innerText = this.score;
+        livesInfo.innerText = this.lives;
     };
 
     interval() {
