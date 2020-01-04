@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('input');
     const startScreen = document.querySelector('.start-screen');
 
-    const typeWriter = new Game(ctx, canvas, input);
-
     startScreen.addEventListener('click', () => {
+        const typeWriter = new Game(ctx, canvas, input);
         startScreen.classList.add('effect');
         typeWriter.startGame();
     });
+    
 });

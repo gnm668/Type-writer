@@ -25,6 +25,7 @@ class Game {
         this.render = this.render.bind(this);
         this.gameInfo = this.gameInfo.bind(this);
         this.updateGameInfo = this.updateGameInfo.bind(this);
+        this.gameOver = this.gameOver.bind(this);
 
         this.gameInfo();
     };
@@ -129,5 +130,11 @@ class Game {
     startGame() {
         this.interval();
         requestAnimationFrame(this.render);
+    };
+
+    gameOver() {
+        if (this.lives < 1) {
+
+        };
     };
 };
