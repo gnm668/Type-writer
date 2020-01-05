@@ -97,7 +97,6 @@ class Word {
     checkEdge() {
         if (this.y === 630) {
             this.game.lives -= 1;
-            console.log(this.game.lives);
 
             for (let word in this.game.words) {
                 if (this.word === this.game.words[word].word) {

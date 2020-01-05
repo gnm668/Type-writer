@@ -75,7 +75,6 @@ class Game {
     interval() {
         window.setInterval(() => {
             this.timer += 1;
-            // console.log(`${this.timer}`);
 
             this.difficultyIncrease();
             this.scoreIncrease();
@@ -85,7 +84,6 @@ class Game {
     difficultyIncrease() {
         if (this.randomizer > 5 && this.timer % 20 === 0) {
             this.randomizer -= 5;
-            // console.log(this.randomizer);
         };
 
         if (this.timer % 60 === 0) {
@@ -193,8 +191,6 @@ class Game {
                     this.addSkill(word);
 
                     this.words.splice(word, 1);
-                    // console.log(this.score);
-                    // console.log(this.words);
                     break;
                 };
             };
@@ -202,7 +198,6 @@ class Game {
             this.handleSkill(value);
 
             this.input.value = "";
-            console.log(this.skills);
         };
     };
 
