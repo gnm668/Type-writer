@@ -25,6 +25,8 @@ class Game {
         this.handleSkill = this.handleSkill.bind(this);
         this.addSkill = this.addSkill.bind(this);
         this.maxSkill = this.maxSkill.bind(this);
+
+        this.handleBomb = this.handleBomb.bind(this);
         
         this.handleWord = this.handleWord.bind(this);
         this.spawnWord = this.spawnWord.bind(this);
@@ -142,11 +144,21 @@ class Game {
                 for (let skillName in skillNames) {
                     if (value === skillNames[skillName].innerText) {
                         skillNames[skillName].remove();
+
+                        this.handleBomb(value);
+
                         this.input.value = '';
                         return;
                     };
                 };
             };
+        };
+    };
+
+    handleBomb(value) {
+        if (value === 'bomb') {
+            this.words = [];
+            this.score += (this.wordScore * 10)
         };
     };
 
