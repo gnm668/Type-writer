@@ -237,8 +237,10 @@ class Game {
             score.innerText = this.score;
             gameOver.appendChild(score);
 
-            addEventListener('keydown', () => {
-                window.location.reload(false);
+            addEventListener('keydown', e => {
+                if (e.keyCode === 13) {
+                    window.location.reload(false);
+                };
             });
 
         };
