@@ -88,6 +88,10 @@ body {
     color: rgb(0, 77, 0);
 }
 
+.slow {
+    color: rgb(0, 0, 77);
+}
+
 .lives {
     font-size: 20px;
     display: flex;

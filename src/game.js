@@ -28,6 +28,7 @@ class Game {
 
         this.handleBomb = this.handleBomb.bind(this);
         this.handleHealth = this.handleHealth.bind(this);
+        this.handleSlow = this.handleSlow.bind(this);
         
         this.handleWord = this.handleWord.bind(this);
         this.spawnWord = this.spawnWord.bind(this);
@@ -133,6 +134,18 @@ class Game {
             let skills = document.querySelector('.skill-names');
             skills.appendChild(skill);
         };
+
+        if (this.words[word].skill === 'slow') {
+            this.skills.push('slow');
+            this.maxSkill();
+
+            let skill = document.createElement('div');
+            skill.classList.add('slow');
+            skill.innerText = 'slow';
+
+            let skills = document.querySelector('.skill-names');
+            skills.appendChild(skill);
+        };
     };
 
     maxSkill() {
@@ -158,6 +171,7 @@ class Game {
 
                         this.handleBomb(value);
                         this.handleHealth(value);
+                        this.handleSlow(value);
 
                         this.input.value = '';
                         return;
@@ -177,6 +191,20 @@ class Game {
     handleHealth(value) {
         if (value === 'health') {
             this.lives = 10;
+        };
+    };
+
+    handleSlow(value) {
+        if (value === 'slow') {
+            for (let word in this.words) {
+                this.words[word].dy /= 4;
+            };
+
+            window.setTimeout(() => {
+                for (let word in this.words) {
+                    this.words[word].dy = this.wordSpeed;
+                };
+            }, 5000);
         };
     };
 
