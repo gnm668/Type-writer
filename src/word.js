@@ -28,7 +28,7 @@ class Word {
     assignSkill() {
         this.random = Math.floor(Math.random() * 200);
 
-        const bomb = [46, 23 ,4 ,17 ,64 ,36 ,77 ,89 ,33 ,90 ,52 ,27 ,35 ,15 ,93 ,15 ,58 ,31 ,99];
+        const bomb = [46, 23 ,4 ,17 ,64 ,36 ,77 ,89 ,33 ,90 ,52 ,27 ,35 ,15];
         const health = [5, 25, 12, 92, 40, 32, 66, 76, 49, 20, 98, 39];
 
         if (bomb.includes(this.random)) {
