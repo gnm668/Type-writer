@@ -4,15 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const input = document.getElementById('input');
     const startScreen = document.querySelector('.start-screen');
-    const gameOver = document.querySelector('.game-over');
 
-    startScreen.addEventListener('click', () => {
-        const typeWriter = new Game(ctx, canvas, input);
-        startScreen.classList.add('effect');
-        typeWriter.startGame();
-    });
+    const startGame = e => {
+        if (e.keyCode === 32) {
+            const typeWriter = new Game(ctx, canvas, input);
+            startScreen.classList.add('effect');
+            typeWriter.startGame();
 
-    // gameOver.addEventListener('click', () => {
-    //     window.location.reload(false);
-    // });
+            document.removeEventListener('keyup', startGame);
+        };
+    };
+
+    document.addEventListener('keyup', startGame);
+
 });
