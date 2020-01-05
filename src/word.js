@@ -41,7 +41,7 @@ class Word {
         };
 
         if (slow.includes(this.random)) {
-            this.skill = 'slow'
+            this.skill = 'slow';
         };
     };
 
@@ -50,7 +50,9 @@ class Word {
             this.ctx.fillStyle = 'rgb(77, 0, 0)';
         } else if (this.skill === 'health') {
             this.ctx.fillStyle = 'rgb(0, 77, 0)';
-        } else {    
+        } else if (this.skill === 'slow') {
+            this.ctx.fillStyle = ' rgb(0, 0, 77)';
+        }else {    
             this.ctx.fillStyle = '#000000';
         };
     };
