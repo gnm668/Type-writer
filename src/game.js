@@ -27,6 +27,7 @@ class Game {
         this.maxSkill = this.maxSkill.bind(this);
 
         this.handleBomb = this.handleBomb.bind(this);
+        this.handleHealth = this.handleHealth.bind(this);
         
         this.handleWord = this.handleWord.bind(this);
         this.spawnWord = this.spawnWord.bind(this);
@@ -122,6 +123,18 @@ class Game {
             let skills = document.querySelector('.skill-names');
             skills.appendChild(skill);
         };
+
+        if (this.words[word].skill === 'health') {
+            this.skills.push('health');
+            this.maxSkill();
+
+            let skill = document.createElement('div');
+            skill.classList.add('health');
+            skill.innerText = 'health';
+
+            let skills = document.querySelector('.skill-names');
+            skills.appendChild(skill);
+        };
     };
 
     maxSkill() {
@@ -146,6 +159,7 @@ class Game {
                         skillNames[skillName].remove();
 
                         this.handleBomb(value);
+                        this.handleHealth(value);
 
                         this.input.value = '';
                         return;
@@ -159,6 +173,12 @@ class Game {
         if (value === 'bomb') {
             this.words = [];
             this.score += (this.wordScore * 10)
+        };
+    };
+
+    handleHealth(value) {
+        if (value === 'health') {
+            this.lives = 10;
         };
     };
 

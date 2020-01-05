@@ -28,16 +28,23 @@ class Word {
     assignSkill() {
         this.random = Math.floor(Math.random() * 200);
 
-        const bomb = [46,23,4,17,64,36,77,89,33,90,52,27,35,15,93,15,58,31,99];
+        const bomb = [46, 23 ,4 ,17 ,64 ,36 ,77 ,89 ,33 ,90 ,52 ,27 ,35 ,15 ,93 ,15 ,58 ,31 ,99];
+        const health = [5, 25, 12, 92, 40, 32, 66, 76, 49, 20, 98, 39];
 
         if (bomb.includes(this.random)) {
             this.skill = 'bomb';
+        };
+
+        if (health.includes(this.random)) {
+            this.skill = 'health';
         };
     };
 
     assignColor() {
         if (this.skill === 'bomb') {
             this.ctx.fillStyle = 'rgb(77, 0, 0)';
+        } else if (this.skill === 'health') {
+            this.ctx.fillStyle = 'rgb(0, 77, 0)';
         } else {    
             this.ctx.fillStyle = '#000000';
         };
