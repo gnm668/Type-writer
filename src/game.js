@@ -12,7 +12,7 @@ class Game {
         this.words = [];
         this.wordScore = 100;
         this.wordSpeed = 0.25;
-        this.randomizer = 150;
+        this.randomizer = 125;
 
         this.lives = 10;
         this.score = 0;
