@@ -60,6 +60,9 @@ body {
     position: absolute;
     right: 26px;
     top: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .score-info {
@@ -69,6 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .skills {
