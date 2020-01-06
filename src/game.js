@@ -70,7 +70,7 @@ class Game {
         scoreInfo.innerText = this.score;
         livesInfo.innerText = this.lives;
 
-        this.checkGameOver();
+        // this.checkGameOver();
     };
 
     interval() {
@@ -200,10 +200,16 @@ class Game {
                 this.words[word].dy /= 4;
             };
 
+            this.wordSpeed /= 4;
+
             window.setTimeout(() => {
+
+                this.wordSpeed *= 4;
+
                 for (let word in this.words) {
                     this.words[word].dy = this.wordSpeed;
                 };
+
             }, 5000);
         };
     };
@@ -266,7 +272,7 @@ class Game {
             gameOver.appendChild(score);
 
             addEventListener('keydown', e => {
-                if (e.keyCode === 13) {
+                if (e.keyCode === 9) {
                     window.location.reload(false);
                 };
             });
