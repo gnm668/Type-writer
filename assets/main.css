@@ -65,6 +65,10 @@ body {
     margin-top: 10px;
 }
 
+.score > :first-child {
+    color: whitesmoke;
+}
+
 .score-info {
     background: grey;
     height: 40px;
@@ -88,6 +92,7 @@ body {
 .skills > :first-child {
     font-size: 20px;
     margin-top: 11px;
+    color: whitesmoke;
 }
 
 .skill-names {
@@ -125,6 +130,10 @@ body {
     width: 120px;
     background: transparent;
     margin-left: 30px;
+}
+
+.lives > :first-child {
+    color: whitesmoke;
 }
 
 .lives-info {
@@ -207,5 +216,6 @@ body {
 .speed-type {
     font-size: 24px;
     margin-left: 21px;
+    color: whitesmoke;
 }
 
