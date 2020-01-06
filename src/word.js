@@ -32,9 +32,9 @@ class Word {
         const health = [5, 25, 12, 92, 40, 32, 66, 76, 49, 20, 98, 39, 44];
         const slow = [6, 10, 80, 48, 51, 37, 26, 13, 1, 30, 95, 55];
 
-        // if (bomb.includes(this.random)) {
+        if (bomb.includes(this.random)) {
             this.skill = 'bomb';
-        // };
+        };
 
         if (health.includes(this.random)) {
             this.skill = 'health';
