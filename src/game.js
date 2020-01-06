@@ -70,7 +70,7 @@ class Game {
         scoreInfo.innerText = this.score;
         livesInfo.innerText = this.lives;
 
-        // this.checkGameOver();
+        this.checkGameOver();
     };
 
     interval() {
