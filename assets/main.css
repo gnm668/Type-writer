@@ -211,6 +211,11 @@ body {
 .instructions :nth-child(2) {
     display: flex;
     text-align: center;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .speed-type {
