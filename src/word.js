@@ -47,11 +47,11 @@ class Word {
 
     assignColor() {
         if (this.skill === 'bomb') {
-            this.ctx.fillStyle = 'rgb(196, 0, 0)';
+            this.ctx.fillStyle = 'rgb(175, 0, 0)';
         } else if (this.skill === 'health') {
-            this.ctx.fillStyle = 'rgb(0, 196, 0)';
+            this.ctx.fillStyle = 'rgb(0, 172, 0)';
         } else if (this.skill === 'slow') {
-            this.ctx.fillStyle = 'rgb(0, 0, 196)';
+            this.ctx.fillStyle = 'rgb(0, 144, 228)';
         }else {    
             this.ctx.fillStyle = '#ffffff';
         };
@@ -81,7 +81,7 @@ class Word {
 
         this.assignColor();
         this.ctx.fillRect(this.x, this.y, this.width, 30);
-        this.ctx.font = '16px Arial';
+        this.ctx.font = 'bold 16px Arial';
         // this.ctx.fillStyle = 'rgb(255, 255, 255)';
         this.ctx.fillText(`${this.word}`,this.x + 5, this.y + 20, 100);
 

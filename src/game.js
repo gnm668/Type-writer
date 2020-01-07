@@ -79,7 +79,7 @@ class Game {
 
             this.difficultyIncrease();
             this.scoreIncrease();
-        }, 1000);
+        }, 100);
     };
 
     difficultyIncrease() {
