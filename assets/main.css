@@ -17,7 +17,7 @@ body {
     /* background-color: rgb(0, 0, 77); */
     background-color: rgb(36, 36, 36);
     height: 650px;
-    width: 1050px;
+    width: 1100px;
 }
 
 .game-info {
@@ -58,7 +58,7 @@ body {
     width: 150px;
     background: transparent;
     position: absolute;
-    right: 26px;
+    right: 25px;
     top: 2px;
     justify-content: center;
     align-items: center;
