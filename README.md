@@ -47,10 +47,11 @@ When the game is first initalized, I assigned a range to the game named "randomi
 
 Words spawn at a random rate based on whether there are no words currently on the board, or if the two random numbers within the game's "randomizer" range are equal to each other.
 
+
+![Screen Shot 2020-01-07 at 1 14 35 PM](https://user-images.githubusercontent.com/43099538/71930127-e1e0b980-314f-11ea-9761-8f45e1e90638.png)
+
 ### Scaling of Difficulty, Points per Word, and Spawn Rate
 
 When the game is first initalized, I called a recursive function that updates a timer that exists within the game object. 
 
 In that same recursive function, I have two callbacks. One that updates difficulty and one that updates the score per word. In the difficulty callback, I have two more callbacks that will check the timer saved within the game object and will decrease the range of randomization that controls the spawn rate, as well as increasing the gravity so that the words fall faster. 
-
-![Screen Shot 2020-01-07 at 1 14 35 PM](https://user-images.githubusercontent.com/43099538/71930127-e1e0b980-314f-11ea-9761-8f45e1e90638.png)
