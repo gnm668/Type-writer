@@ -99,7 +99,9 @@ class Game {
     };
 
     spawnWords() {
-        if (this.words.length === 0 || Math.floor(Math.random() * this.randomizer + 10) === Math.floor(Math.random() * this.randomizer +10)) {
+        if (this.words.length === 0 || 
+            Math.floor(Math.random() * this.randomizer + 10) === Math.floor(Math.random() * this.randomizer +10)
+            ) {
             this.spawnWord();
         };
     };
