@@ -106,17 +106,17 @@ body {
 }
 
 .bomb {
-    color: rgb(77, 0, 0);
+    color: rgb(196, 0, 0);
     margin-top: 7px;
 }
 
 .health {
-    color: rgb(0, 77, 0);
+    color: rgb(0, 196, 0);
     margin-top: 7px;
 }
 
 .slow {
-    color: rgb(0, 0, 77);
+    color: rgb(0, 0, 196);
     margin-top: 7px;
 }
 

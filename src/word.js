@@ -20,7 +20,7 @@ class Word {
         this.assignSkill = this.assignSkill.bind(this);
         this.assignColor = this.assignColor.bind(this);
     
-        this.widthCalc();
+        // this.widthCalc();
         this.assignSkill();
         
     };
@@ -47,31 +47,31 @@ class Word {
 
     assignColor() {
         if (this.skill === 'bomb') {
-            this.ctx.fillStyle = 'rgb(77, 0, 0)';
+            this.ctx.fillStyle = 'rgb(196, 0, 0)';
         } else if (this.skill === 'health') {
-            this.ctx.fillStyle = 'rgb(0, 77, 0)';
+            this.ctx.fillStyle = 'rgb(0, 196, 0)';
         } else if (this.skill === 'slow') {
-            this.ctx.fillStyle = 'rgb(0, 0, 77)';
+            this.ctx.fillStyle = 'rgb(0, 0, 196)';
         }else {    
-            this.ctx.fillStyle = '#000000';
+            this.ctx.fillStyle = '#ffffff';
         };
     };
 
-    widthCalc() {
-        const short = ['f', 'i', 'j', 'l', 't'];
-        const medium = ['r'];
-        const long = ['a', 'b', 'c', 'd', 'e', 'g', 'h', 'k', 'm', 'n', 'o', 'p', 'q', 's', 'u', 'v', 'w', 'x', 'y', 'z'];
+    // widthCalc() {
+    //     const short = ['f', 'i', 'j', 'l', 't'];
+    //     const medium = ['r'];
+    //     const long = ['a', 'b', 'c', 'd', 'e', 'g', 'h', 'k', 'm', 'n', 'o', 'p', 'q', 's', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-        for (let i = 0; i < this.word.length; ++i ) {
-            if (short.includes(this.word[i])) {
-                this.width += 6;
-            } else if (long.includes(this.word[i])) {
-                this.width += 12;  
-            } else if (medium.includes(this.word[i])) {
-                this.width += 9;
-            };
-        };
-    };
+    //     for (let i = 0; i < this.word.length; ++i ) {
+    //         if (short.includes(this.word[i])) {
+    //             this.width += 6;
+    //         } else if (long.includes(this.word[i])) {
+    //             this.width += 12;  
+    //         } else if (medium.includes(this.word[i])) {
+    //             this.width += 9;
+    //         };
+    //     };
+    // };
     
     draw() {
 
@@ -82,7 +82,7 @@ class Word {
         this.assignColor();
         this.ctx.fillRect(this.x, this.y, this.width, 30);
         this.ctx.font = '16px Arial';
-        this.ctx.fillStyle = 'rgb(255, 255, 255)';
+        // this.ctx.fillStyle = 'rgb(255, 255, 255)';
         this.ctx.fillText(`${this.word}`,this.x + 5, this.y + 20, 100);
 
     };
