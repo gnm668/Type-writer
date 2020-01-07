@@ -8,7 +8,7 @@ Speed-Type is an addictive typing game that will have you typing until your hand
 
 ## Demo
 
-[Check out some videos!](http://speed-type.herokuapp.com/)
+[Have some fun. You deserve it.](http://speed-type.herokuapp.com/)
 
 ---
 
