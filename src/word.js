@@ -51,7 +51,7 @@ class Word {
         } else if (this.skill === 'health') {
             this.ctx.fillStyle = 'rgb(0, 172, 0)';
         } else if (this.skill === 'slow') {
-            this.ctx.fillStyle = 'rgb(0, 144, 228)';
+            this.ctx.fillStyle = 'rgb(0, 61, 228)';
         }else {    
             this.ctx.fillStyle = '#ffffff';
         };

@@ -108,16 +108,19 @@ body {
 .bomb {
     color: rgb(175, 0, 0);
     margin-top: 7px;
+    font-weight: 700;
 }
 
 .health {
     color: rgb(0, 172, 0);
     margin-top: 7px;
+    font-weight: 700;
 }
 
 .slow {
-    color: rgb(0, 144, 228);
+    color: rgb(0, 61, 228);
     margin-top: 7px;
+    font-weight: 700;
 }
 
 .lives {
