@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-self: center;
     align-self: center;
-    /* background-color: rgb(0, 0, 77); */
+    background-color: rgb(0, 0, 77);
     background-color: rgb(36, 36, 36);
     height: 650px;
     width: 1100px;
