@@ -2,7 +2,8 @@
 @font-face { font-family: Mario2; src: url('/Users/al/Desktop/typewriter/assets/fonts/Krungthep.ttf'); } 
 
 * {
-  font-family: Mario2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Mario2;
 }
 
 body {
