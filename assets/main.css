@@ -1,5 +1,5 @@
-@font-face { font-family: Mario; src: url('/Users/al/Desktop/typewriter/assets/fonts/SuperMario256.ttf'); } 
-@font-face { font-family: Mario2; src: url('/Users/al/Desktop/typewriter/assets/fonts/Krungthep.ttf'); } 
+@font-face { font-family: Mario; src: url('SuperMario256.ttf'); } 
+@font-face { font-family: Mario2; src: url('Krungthep.ttf'); } 
 
 * {
   font-family: Mario2;
