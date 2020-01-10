@@ -1,9 +1,9 @@
-@font-face { font-family: Mario; src: url('/Users/al/Desktop/typewriter/assets/fonts/SuperMario256.ttf'); } 
-@font-face { font-family: Mario2; src: url('/Users/al/Desktop/typewriter/assets/fonts/Krungthep.ttf'); } 
+/* @font-face { font-family: Mario; src: url('/Users/al/Desktop/typewriter/assets/fonts/SuperMario256.ttf'); } 
+@font-face { font-family: Mario2; src: url('/Users/al/Desktop/typewriter/assets/fonts/Krungthep.ttf'); }  */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: Mario2;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: mario;
 }
 
 body {
@@ -178,6 +178,7 @@ body {
 .start-screen > * {
     font-size: 50px;
     color: rgb(196, 196, 196);
+    font-family: mario;
 }
 
 .start-screen.effect {
@@ -212,6 +213,7 @@ body {
     font-size: 50px;
     justify-content: space-evenly;
     color: rgb(196, 196, 196);
+    font-family: mario;
 }
 
 .instructions {
@@ -234,7 +236,7 @@ body {
 .speed-type {
     font-size: 34px;
     color: rgba(8, 8, 8, 0.82);
-    font-family: Mario;
+    font-family: marioGalaxy;
     margin-left: 5px;
 }
 
