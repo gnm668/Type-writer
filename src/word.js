@@ -53,7 +53,7 @@ class Word {
         } else if (this.skill === 'slow') {
             this.ctx.fillStyle = 'rgb(0, 61, 228)';
         }else {    
-            this.ctx.fillStyle = '#ffffff';
+            this.ctx.fillStyle = '#000000';
         };
     };
 
