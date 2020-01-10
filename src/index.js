@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('input');
     const startScreen = document.querySelector('.start-screen');
 
+    const bottomBorder = document.querySelector('.checker');
+    bottomBorder.style.backgroundImage = "url('assets/images/checker.png')";
+
     const startGame = e => {
         if (e.keyCode === 32) {
             const typeWriter = new Game(ctx, canvas, input);
