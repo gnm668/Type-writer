@@ -156,7 +156,7 @@ body {
 .start-screen {
     position: absolute;
     height: 650px;
-    width: 1100px;
+    width: 1150px;
     z-index: 3;
     background: rgb(43, 43, 43);
     opacity: 100%;
@@ -196,7 +196,7 @@ body {
 .game-over.effect {
     position: absolute;
     height: 650px;
-    width: 1100px;
+    width: 1150px;
     z-index: 3;
     background: rgb(43, 43, 43);
     opacity: 100%;

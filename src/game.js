@@ -70,7 +70,7 @@ class Game {
         scoreInfo.innerText = this.score;
         livesInfo.innerText = this.lives;
 
-        // this.checkGameOver();
+        this.checkGameOver();
     };
 
     interval() {
@@ -114,7 +114,7 @@ class Game {
 
     addSkill(word) {
         if (this.words[word].skill === 'bomb') {
-            this.skills.unshift('bomb');
+            this.skills.push('bomb');
             this.maxSkill();
 
             let skill = document.createElement('div');
@@ -225,7 +225,6 @@ class Game {
                     this.score += this.words[word].score;
 
                     this.addSkill(word);
-                    console.log(this.skills);
 
                     this.words.splice(word, 1);
                     break;
