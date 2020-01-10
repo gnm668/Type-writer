@@ -29,11 +29,12 @@ body {
     left: 450px;
     font-size: 20px;
     padding: 3px;
-    background: grey;
+    background: white;
     border: none;
     opacity: 90%;
     text-align: center;
-    color: rgb(43, 43, 43);
+    color: black;
+    border-radius: 2%;
 }
 
 .game-info {
@@ -99,9 +100,9 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    background: grey;
+    background: white;
     height: 288px;
-    /* justify-content: space-evenly; */
+    border-radius: 2%;
 }
 
 .bomb {
