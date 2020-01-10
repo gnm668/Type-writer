@@ -1,5 +1,7 @@
+@font-face { font-family: Mario; src: url('/Users/al/Desktop/typewriter/assets/fonts/SuperMario256.ttf'); } 
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Mario;
 }
 
 body {
@@ -9,7 +11,6 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
-/* @font-face { font-family: Mario; src: url('myserver.com/fonts/Delicious-Roman.ttf'); }  */
 
 .game-container {
     position: relative;
