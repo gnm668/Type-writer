@@ -68,13 +68,14 @@ body {
 }
 
 .score-info {
-    background: grey;
+    background: white;
     height: 40px;
     width: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    border-radius: 2%;
 }
 
 .skills {
