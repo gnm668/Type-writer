@@ -9,6 +9,8 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
+/* @font-face { font-family: Mario; src: url('myserver.com/fonts/Delicious-Roman.ttf'); }  */
+
 .game-container {
     position: relative;
     display: flex;

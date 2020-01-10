@@ -114,7 +114,7 @@ class Game {
 
     addSkill(word) {
         if (this.words[word].skill === 'bomb') {
-            this.skills.push('bomb');
+            this.skills.unshift('bomb');
             this.maxSkill();
 
             let skill = document.createElement('div');
@@ -225,6 +225,7 @@ class Game {
                     this.score += this.words[word].score;
 
                     this.addSkill(word);
+                    console.log(this.skills);
 
                     this.words.splice(word, 1);
                     break;
