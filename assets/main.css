@@ -139,12 +139,13 @@ body {
 }
 
 .lives-info {
-    background: grey;
+    background: white;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    border-radius: 2%;
 }
 
 .start-screen {
