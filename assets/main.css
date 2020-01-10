@@ -12,6 +12,9 @@ body {
     background-color: rgb(31, 31, 31);
 }
 
+.ui-container {
+    position: relative;
+}
 
 .game-container {
     position: relative;
@@ -233,3 +236,10 @@ body {
     margin-left: 5px;
 }
 
+.checker {
+    height: 100px;
+    width: 1150px;
+    background: url(/Users/al/Desktop/typewriter/assets/images/checker.png);
+    position: absolute;
+    bottom: -100px;
+}

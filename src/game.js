@@ -109,7 +109,7 @@ class Game {
     spawnWord() {
         let randomLoc = (Math.random() * 690);
         let word = new Word(this, this.ctx, this.canvas, this.dictionary.randomWord(), randomLoc, 0, this.wordScore, this.wordSpeed);
-        this.words.push(word);
+        this.words.unshift(word);
     };
 
     addSkill(word) {

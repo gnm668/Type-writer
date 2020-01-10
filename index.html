@@ -15,62 +15,66 @@
     <title>Speed-Type</title>
 </head>
 <body>
-    <div class="game-container">
-        <div class="start-screen">
-            <div class="instructions">
-                <div>Instructions</div>
+    <div class="ui-container">
+        <div class="game-container">
+            <div class="start-screen">
+                <div class="instructions">
+                    <div>Instructions</div>
+                    <div>
+                        Welcome to Speed-Type! 
+                        
+                        Type the words that drop 
+                        from the top of the screen and input them with either
+                        the enter or spacebar keys. 
+    
+                        Certain colors give you special skills. 
+                        Type the name of these skills to activate them.
+                    </div>
+                </div>
                 <div>
-                    Welcome to Speed-Type! 
-                    
-                    Type the words that drop 
-                    from the top of the screen and input them with either
-                    the enter or spacebar keys. 
-
-                    Certain colors give you special skills. 
-                    Type the name of these skills to activate them.
+                    Press the spacebar to start
                 </div>
             </div>
-            <div>
-                Press the spacebar to start
+    
+            <div class="game-over">
+                <div>
+                    Game Over 
+                </div>
+                <div>
+                    Press the tab key to play again
+                </div>
+                <div>
+                    Final Score
+                </div>
             </div>
+    
+    
+            <div class="game-info">
+                <div class="speed-type">SPEEDTYPE</div>
+                <div class="score">
+                    <div>
+                        Score
+                    </div>
+                </div>
+                <div class="lives">
+                    <div>
+                        Lives
+                    </div>
+                </div>
+                <div class="skills">
+                    <div>
+                        Skills
+                    </div>
+                    <div class="skill-names">
+    
+                    </div>
+                </div>
+            </div>
+            <canvas id="game" height="650" width="800"></canvas>
+            <input id="input" type="text">
         </div>
-
-        <div class="game-over">
-            <div>
-                Game Over 
-            </div>
-            <div>
-                Press the tab key to play again
-            </div>
-            <div>
-                Final Score
-            </div>
-        </div>
-
-
-        <div class="game-info">
-            <div class="speed-type">SPEEDTYPE</div>
-            <div class="score">
-                <div>
-                    Score
-                </div>
-            </div>
-            <div class="lives">
-                <div>
-                    Lives
-                </div>
-            </div>
-            <div class="skills">
-                <div>
-                    Skills
-                </div>
-                <div class="skill-names">
-
-                </div>
-            </div>
-        </div>
-        <canvas id="game" height="650" width="800"></canvas>
-        <input id="input" type="text">
+    
+        <div class="checker"></div>
     </div>
 </body>
 </html>
