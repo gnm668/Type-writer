@@ -41,6 +41,12 @@ class Game {
         this.render = this.render.bind(this);
 
         this.gameInfo();
+        this.checker();
+    };
+
+    checker() {
+        let bottomBorder = document.querySelector('.checker');
+        bottomBorder.style.backgroundImage = "url('assets/images/checker.png')";
     };
 
     gameInfo() {

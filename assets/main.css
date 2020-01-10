@@ -241,7 +241,7 @@ body {
 .checker {
     height: 100px;
     width: 1150px;
-    background: url(/Users/al/Desktop/typewriter/assets/images/checker.png);
+    /* background: url(/Users/al/Desktop/typewriter/assets/images/checker.png); */
     position: absolute;
     bottom: -100px;
 }
