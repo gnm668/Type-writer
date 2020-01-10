@@ -81,7 +81,7 @@ class Word {
 
         this.assignColor();
         this.ctx.fillRect(this.x, this.y, this.width, 30);
-        this.ctx.font = 'bold 16px Mario';
+        this.ctx.font = 'bold 16px Mario2';
         // this.ctx.fillStyle = 'rgb(255, 255, 255)';
         this.ctx.fillText(`${this.word}`,this.x + 5, this.y + 20, 100);
 

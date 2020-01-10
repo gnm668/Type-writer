@@ -1,7 +1,8 @@
 @font-face { font-family: Mario; src: url('/Users/al/Desktop/typewriter/assets/fonts/SuperMario256.ttf'); } 
+@font-face { font-family: Mario2; src: url('/Users/al/Desktop/typewriter/assets/fonts/Krungthep.ttf'); } 
 
 * {
-  font-family: Mario;
+  font-family: Mario2;
 }
 
 body {
@@ -229,5 +230,6 @@ body {
     font-size: 24px;
     margin-left: 21px;
     color: black;
+    font-family: Mario;
 }
 
