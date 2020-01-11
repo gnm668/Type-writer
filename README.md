@@ -2,7 +2,7 @@
 
 Speed Type is an addictive typing game that will have you typing until your hands hurt.
 
-![Screen Shot 2020-01-10 at 3 34 50 PM](https://user-images.githubusercontent.com/43099538/72194096-2cb53800-33c1-11ea-814b-05d848461913.png)
+![speedtype](https://user-images.githubusercontent.com/43099538/72194536-c7fadd00-33c2-11ea-9597-e4fb277d8551.gif)
 
 ---
 
