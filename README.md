@@ -1,12 +1,12 @@
-# Speed-Type
+# Speed Type
 
-Speed-Type is an addictive typing game that will have you typing until your hands hurt.
+Speed Type is an addictive typing game that will have you typing until your hands hurt.
 
-![Screen Shot 2020-01-05 at 5 07 53 PM](https://user-images.githubusercontent.com/43099538/71807275-c4accd80-301f-11ea-9542-fbb9f58d2071.png)
+![speedtype](https://user-images.githubusercontent.com/43099538/72194536-c7fadd00-33c2-11ea-9597-e4fb277d8551.gif)
 
 ---
 
-## Demo
+## Live Demo
 
 [Have some fun. You deserve it.](http://speed-type.herokuapp.com/)
 
