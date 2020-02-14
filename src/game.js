@@ -224,7 +224,7 @@ class Game {
 
     // COME BACK TO DEMO!!!
     startDemo(value) {
-        if (value === "demo") {
+        if (value === "demo" && this.demo === null) {
             this.demo = new Demo(this);
         };
     }
