@@ -274,7 +274,7 @@ class Game {
         if (this.demo) {
             this.demo.read();
         };
-        
+
     };
 
     startGame() {
@@ -296,6 +296,7 @@ class Game {
             addEventListener('keydown', e => {
                 if (e.keyCode === 9) {
                     window.location.reload(false);
+                    document.body.focus();
                 };
             });
 

@@ -4,6 +4,7 @@ class Demo {
         this.words = [];
 
         this.read = this.read.bind(this);
+        this.type = this.type.bind(this);
     };
 
     read() {
@@ -16,11 +17,20 @@ class Demo {
                 this.words.push(word);
             };
         };
-        
+        console.log(this.words);
     };
 
-    type(){
-
+    type() {
+        if (this.words.length) {
+            let currentWord = this.words.shift();
+            console.log(currentWord);
+        };
     };
 
+    // have play be called every 60 seconds
+    // the set interval will be 6000/currentword.length in type
+
+    play() {
+
+    };
 }
