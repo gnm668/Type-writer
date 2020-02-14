@@ -40,6 +40,7 @@ class Game {
         
         this.gameInfo = this.gameInfo.bind(this);
         this.updateGameInfo = this.updateGameInfo.bind(this);
+        this.startDemo = this.startDemo.bind(this);
         
         this.render = this.render.bind(this);
 
@@ -222,7 +223,7 @@ class Game {
 
 
     // COME BACK TO DEMO!!!
-    handleDemo(value) {
+    startDemo(value) {
         if (value === "demo") {
             this.demo = new Demo(this);
         };
@@ -245,7 +246,7 @@ class Game {
             };
 
             this.handleSkill(value);
-            this.handleDemo(value);
+            this.startDemo(value);
 
             this.input.value = "";
         };
