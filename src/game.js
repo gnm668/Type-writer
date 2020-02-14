@@ -50,11 +50,11 @@ class Game {
 
     gameInfo() {
         const score = document.querySelector('.score');
-        const skills = document.querySelector('.skills');
+        // const skills = document.querySelector('.skills');
         const lives = document.querySelector('.lives');
 
         const scoreInfo = document.createElement('div');
-        const skillsInfo = document.createElement('div');
+        // const skillsInfo = document.createElement('div');
         const livesInfo = document.createElement('div');
 
         scoreInfo.classList.add('score-info');
@@ -270,6 +270,11 @@ class Game {
         for (let i = 0; i < this.words.length; ++i) {
             this.words[i].render();
         };
+
+        if (this.demo) {
+            this.demo.read();
+        };
+        
     };
 
     startGame() {
