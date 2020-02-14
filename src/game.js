@@ -4,6 +4,9 @@ class Game {
         this.canvas = canvas;
         this.input = input;
 
+        // COME BACK TO THIS DEMO
+        this.demo = null;
+        // /////////////////
         this.render = this.render.bind(this);
         this.startGame = this.startGame.bind(this);
         this.gameOver = false;
@@ -216,6 +219,13 @@ class Game {
             }, 5000);
         };
     };
+
+
+    // COME BACK TO DEMO!!!
+    handleDemo() {
+        this.demo = new Demo(this);
+    }
+    // /////////////////
 
     handleWord(e) {
         if (e.keyCode === 32 || e.keyCode === 13) {
