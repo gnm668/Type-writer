@@ -222,8 +222,10 @@ class Game {
 
 
     // COME BACK TO DEMO!!!
-    handleDemo() {
-        this.demo = new Demo(this);
+    handleDemo(value) {
+        if (value === "demo") {
+            this.demo = new Demo(this);
+        };
     }
     // /////////////////
 
@@ -243,6 +245,7 @@ class Game {
             };
 
             this.handleSkill(value);
+            this.handleDemo(value);
 
             this.input.value = "";
         };
