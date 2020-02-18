@@ -8,6 +8,7 @@ class Demo {
         this.type = this.type.bind(this);
         this.typeLetter = this.typeLetter.bind(this);
         this.demoHandleWord = this.demoHandleWord.bind(this);
+        this.userSkill = this.useSkill.bind(this);
         
         console.log('YAY');
     };
@@ -23,8 +24,32 @@ class Demo {
             };
         };
 
+        this.useSkill();
+
         // testing
         // console.log(this.words);
+    };
+
+
+    useSkill() {
+        if (this.game.lives < 3 && this.game.skills.includes('health')) {
+            let health = {word: 'health'}
+            this.words.unshift(health);
+        };
+
+        if (this.game.words.length > 10 && this.game.skills.includes('bomb')) {
+            let bomb = {word: 'bomb'};
+            this.words.unshift(bomb);
+
+            window.setTimeout(() => {
+                this.words = this.game.words;
+            }, 3500);
+        };
+
+        if (this.game.words.length > 5 && this.game.skills.includes('slow')) {
+            let slow = {word: 'slow'};
+            this.words.unshift(slow);
+        };
     };
 
     demoHandleWord() {
@@ -41,6 +66,8 @@ class Demo {
                 break;
             };
         };
+
+        this.game.handleSkill(value);
     };
 
     typeLetter(currentWord, i, interval) {
@@ -61,21 +88,6 @@ class Demo {
 
 
             this.typeLetter(currentWord, 0, interval);
-
-
-            
-
-            // for (let i = 0; i < currentWord.length; ++i) {
-            //     let currentChar = currentWord[0];
-            //     currentWord = currentWord.substring(1, currentWord.length);
-            //     setTimeout(() => {
-            //         debugger;
-            //         this.input.value += currentChar;
-            //     }, interval);
-            // };
-            
-            // testing
-            // console.log(currentWord);
         };
     };
 };
