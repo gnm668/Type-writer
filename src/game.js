@@ -24,6 +24,7 @@ class Game {
         this.timer = 0;
 
         this.interval = this.interval.bind(this);
+        this.demoInterval = this.demoInterval.bind(this);
 
         this.handleSkill = this.handleSkill.bind(this);
         this.addSkill = this.addSkill.bind(this);
@@ -76,6 +77,20 @@ class Game {
         livesInfo.innerText = this.lives;
 
         this.checkGameOver();
+    };
+
+    demoInterval() {
+        window.setInterval(() => {
+            if (this.demo) {
+                this.demo.read();
+            };
+        }, 3000);
+
+        window.setInterval(() => {
+            if (this.demo) {
+                this.demo.type();
+            };
+        }, 1000);
     };
 
     interval() {
@@ -225,7 +240,7 @@ class Game {
     // COME BACK TO DEMO!!!
     startDemo(value) {
         if (value === "demo" && this.demo === null) {
-            this.demo = new Demo(this);
+            this.demo = new Demo(this, this.input);
         };
     }
     // /////////////////
@@ -270,15 +285,11 @@ class Game {
         for (let i = 0; i < this.words.length; ++i) {
             this.words[i].render();
         };
-
-        if (this.demo) {
-            this.demo.read();
-        };
-
     };
 
     startGame() {
         this.interval();
+        this.demoInterval();
         requestAnimationFrame(this.render);
     };
 
