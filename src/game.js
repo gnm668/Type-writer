@@ -294,9 +294,8 @@ class Game {
             gameOver.appendChild(score);
 
             addEventListener('keydown', e => {
-                if (e.keyCode === 9) {
+                if (e.keyCode === 13) {
                     window.location.reload(false);
-                    document.body.focus();
                 };
             });
 
