@@ -43,7 +43,7 @@ class Demo {
 
             window.setTimeout(() => {
                 this.words = this.game.words;
-            }, 3500);
+            }, 1000);
         };
 
         if (this.game.words.length > 5 && this.game.skills.includes('slow')) {
