@@ -283,7 +283,9 @@ class Game {
         this.input.addEventListener('keydown', this.handleWord);
 
         for (let i = 0; i < this.words.length; ++i) {
-            this.words[i].render();
+            if (this.words[i]) {
+                this.words[i].render();
+            };
         };
     };
 
